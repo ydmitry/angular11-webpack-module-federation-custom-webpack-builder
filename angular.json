@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "angular-v11-rc2"
+  "defaultProject": "angular-v11-rc2",
+  "cli": {
+    "analytics": false
+  }
 }
