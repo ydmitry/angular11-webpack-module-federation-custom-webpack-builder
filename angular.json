@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-v11-rc2": {
+    "angular-v11": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/angular-v11-rc2",
+            "outputPath": "dist/angular-v11",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "angular-v11-rc2:build"
+            "browserTarget": "angular-v11:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-v11-rc2:build:production"
+              "browserTarget": "angular-v11:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-v11-rc2:build"
+            "browserTarget": "angular-v11:build"
           }
         },
         "test": {
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-v11-rc2:serve"
+            "devServerTarget": "angular-v11:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-v11-rc2:serve:production"
+              "devServerTarget": "angular-v11:serve:production"
             }
           }
         }
@@ -183,7 +183,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -256,7 +256,7 @@
       }
     }
   },
-  "defaultProject": "angular-v11-rc2",
+  "defaultProject": "angular-v11",
   "cli": {
     "analytics": false
   }

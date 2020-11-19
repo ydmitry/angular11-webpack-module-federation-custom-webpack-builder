@@ -7,7 +7,7 @@ import {loadRemoteModule} from './federation-utils';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'angular-v11-rc2';
+  title = 'angular-v11';
 
   @ViewChild('vc', { read: ViewContainerRef, static: true })
   viewContainer!: ViewContainerRef;

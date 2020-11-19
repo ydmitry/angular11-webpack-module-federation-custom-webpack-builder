@@ -19,3 +19,9 @@ Contains demo to help with https://github.com/just-jeb/angular-builders/issues/8
 `yarn start` - host app build
 
 `yarn start:remote` - remote app build
+
+# Build PROD
+
+`yarn build:prod` - host app prod build
+
+`yarn build:remote-prod` - remote app prod build
